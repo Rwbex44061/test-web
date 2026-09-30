@@ -7,7 +7,7 @@ import { tabinfo } from "@/config/tabinfo";
 export default function TabInterface() {
   type TabKey = keyof typeof tabinfo;
   const tabKeys = Object.keys(tabinfo) as TabKey[];
-  const [tab, setTab] = useState<TabKey>(tabKeys[0] || "比賽");
+  const [tab, setTab] = useState<TabKey>(tabKeys[0] || "技能");
   const [, startTransition] = useTransition();
 
   const handleTabChange = (id: TabKey) => {
@@ -18,7 +18,7 @@ export default function TabInterface() {
 
   return (
     <section
-      className="my-16 rounded-xl border border-gray-300 p-4"
+      className="my-16 rounded-xl border border-gray-300 p-4 md:p-6"
       id="tabinfo"
     >
       <div className="flex flex-col text-left">
@@ -48,7 +48,7 @@ export default function TabInterface() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
-          style={{ minHeight: "150px" }}
+          style={{ minHeight: "250px" }}
         >
           <AnimatePresence mode="wait">
             <motion.div
@@ -59,7 +59,7 @@ export default function TabInterface() {
               transition={{ duration: 0.3 }}
               className="absolute w-full"
             >
-              <ul className="pl-2">
+              <ul className="space-y-2 text-center">
                 {tabinfo[tab].content.map((line, index) => (
                   <li key={index}>{line}</li>
                 ))}

@@ -1,7 +1,4 @@
 type Tabinfo = {
-  比賽: {
-    content: string[];
-  };
   技能: {
     content: string[];
   };
@@ -11,29 +8,24 @@ type Tabinfo = {
 };
 
 export const tabinfo: Tabinfo = {
-  比賽: {
-    content: [
-      "APCS 大學程式設計先修檢測 - 四級",
-      "CPE 大學程式能力檢定 - 三題(前14%)",
-      "111學年度 中和高中學習成就測驗 地理科 - 第一名",
-    ],
-  },
   技能: {
     content: [
-      "React / Next.js 網頁全端開發",
-      "Arduino程式設計",
-      "FRC程式設計",
-      "競賽程式",
-      "演算法分析",
+      "React / Next.js 前後端開發",
+      "PostgreSQL / Firebase 資料庫運維",
+      "Tailwind CSS UI/UX 設計",
+      "C++ / Python 競賽程式設計",
+      "Java (FRC) / Arduino 機器人程式",
+      "Meta / YouTube 社群經營",
     ],
   },
   團隊: {
     content: [
-      "CodeCat程式貓社群 - 創辦人",
+      "CodeCat 程式貓科技教育 - 創辦人",
+      "綠洲計畫特殊選才 - 委員 / 講師",
+      "康普思生活通 - 後端工程師",
+      "CPE Guide - 總召",
       "Next.js / React 讀書會 - 主持人",
-      "APCS教育團隊 - 測試組組長",
-      "中和高中FRC校隊 - 程式組組長",
-      "中和高中機器人社 - 活動長",
+      "APCS Guide - 測試組長",
     ],
   },
 };
