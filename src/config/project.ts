@@ -98,12 +98,4 @@ export const projects: Project[] = [
     tag: ["網站"],
     intro: "/404",
   },
-  {
-    id: "phaser-chshs",
-    title: "中核高中 - 使用 Phaser 建立的線上遊戲",
-    description: "透過 Phaser 建立的類 RPG 冒險遊戲，支援登入儲存遊戲進度。",
-    image: "/images/projects/phaser-chshs.png",
-    tag: ["網站"],
-    intro: "/404",
-  },
 ];

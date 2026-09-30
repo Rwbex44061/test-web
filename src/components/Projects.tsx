@@ -108,7 +108,7 @@ export function ProjectCard({
   description: string;
 }) {
   return (
-    <div className="rounded-b-2xl shadow-md transition duration-300 hover:shadow-xl">
+    <div className="overflow-hidden rounded-xl border-2 border-orange-200 transition-colors duration-300 hover:border-orange-500">
       <div className="group relative h-64 overflow-hidden rounded-t-xl">
         <Image
           src={imgUrl}
