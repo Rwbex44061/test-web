@@ -10,8 +10,8 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    template: "%s | tomocat",
-    default: "tomocat",
+    template: "%s | tomodog",
+    default: "tomodog",
   },
   description: "簡介",
   openGraph: {
